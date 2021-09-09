@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav class="w-full border">
+      <div class="py-4 px-2 flex w-10/12 mx-auto">
+        <h1>CSS Flex Playground</h1>
+      </div>
+    </nav>
+    <main
+      class="
+        my-5
+        bg-white
+        p-3
+        grid
+        lg:grid-cols-12
+        grid-cols-2
+        gap-3
+        xl:w-10/12
+        lg:w-11/12
+        w-full
+        mx-auto
+      "
+    >
+      <section class="lg:col-span-9 col-span-12 w-full">
+        <div class="p-3 rounded-sm text-sm text-left bg-yellow-200">
+          Click on 'Add Children' to add the items and select the options to see
+          how the flex works with parent and child.
+        </div>
+
+        <section class="my-4 w-full flex flex-col">
+          <div class="">
+            <button class="primary-button text-sm border">Copy Code</button>
+            <button class="primary-button text-sm border ml-3">
+              Reset Value
+            </button>
+          </div>
+
+          <div class="w-full rounded-sm bg-gray-100 my-4 p-2">
+            <div class="children">
+              Children
+              <img src="./src/imgs/x.png" class="option-icon" />
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="lg:col-span-3 col-span-12 w-full">
+        <section>
+          <h3>Parents Style</h3>
+          <div class="ui-container">
+            <label> Display </label>
+            <select class="ui-box">
+              <option>Flex</option>
+              <option>Flex Inline</option>
+            </select>
+          </div>
+          <div class="ui-container">
+            <label> Flex Wrap </label>
+            <div class="flex my-1">
+              <img src="./src/imgs/no-wrap.png" class="option-icon" />
+              <img src="./src/imgs/wrap.png" class="option-icon" />
+            </div>
+          </div>
+          <div class="ui-container">
+            <label> Flex Direction </label>
+            <div class="flex my-1">
+              <img src="./src/imgs/row.png" class="option-icon" />
+              <img
+                src="./src/imgs/row.png"
+                class="option-icon transform rotate-180"
+              />
+              <img
+                src="./src/imgs/row.png"
+                class="option-icon transform -rotate-90"
+              />
+              <img
+                src="./src/imgs/row.png"
+                class="option-icon transform rotate-90"
+              />
+            </div>
+          </div>
+          <div class="ui-container">
+            <label> Justify Content </label>
+            <div class="flex my-1">
+              <img
+                src="./src/imgs/align-right.png"
+                class="option-icon transform -rotate-180"
+              />
+              <img src="./src/imgs/align-center.png" class="option-icon" />
+              <img src="./src/imgs/align-right.png" class="option-icon" />
+              <img src="./src/imgs/around.png" class="option-icon" />
+              <img src="./src/imgs/space-between.png" class="option-icon" />
+              <img src="./src/imgs/end.png" class="option-icon" />
+            </div>
+          </div>
+          <div class="ui-container">
+            <label> Align Items </label>
+            <div class="flex my-1">
+              <img
+                src="./src/imgs/align-right.png"
+                class="option-icon transform -rotate-180"
+              />
+              <img src="./src/imgs/align-center.png" class="option-icon" />
+              <img src="./src/imgs/align-right.png" class="option-icon" />
+              <img src="./src/imgs/stretch.png" class="option-icon" />
+              <img src="./src/imgs/line.png" class="option-icon" />
+              <img src="./src/imgs/end.png" class="option-icon" />
+            </div>
+          </div>
+          <div class="ui-container">
+            <label> Align Content </label>
+            <div class="flex my-1 flex-wrap">
+              <img
+                src="./src/imgs/align-right.png"
+                class="option-icon transform -rotate-180"
+              />
+              <img src="./src/imgs/align-center.png" class="option-icon" />
+              <img src="./src/imgs/align-right.png" class="option-icon" />
+              <img src="./src/imgs/around.png" class="option-icon" />
+              <img src="./src/imgs/space-between.png" class="option-icon" />
+              <img src="./src/imgs/end.png" class="option-icon" />
+              <img src="./src/imgs/stretch.png" class="option-icon" />
+              <img src="./src/imgs/line.png" class="option-icon" />
+              <img src="./src/imgs/even.png" class="option-icon" />
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-5">
+          <div class="flex justify-between items-center">
+            <h3 class="">Children Style</h3>
+
+            <button class="text-sm bg-yellow-400 primary-button">
+              Add Children
+            </button>
+          </div>
+
+          <div class="ui-container">
+            <label> Flex grow </label>
+            <input type="number" class="ui-box" />
+          </div>
+          <div class="ui-container">
+            <label> Flex Shrink </label>
+            <input type="number" class="ui-box" />
+          </div>
+          <div class="ui-container">
+            <label> Flex Basics </label>
+            <input type="number" class="ui-box" />
+          </div>
+        </section>
+      </section>
+
+      <!--  Toast -->
+      <div
+        class="fixed bottom-5 left-5 text-white bg-gray-900 p-3 px-4 rounded-sm"
+      >
+        Code is copied to the clipboard!
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

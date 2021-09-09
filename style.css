@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f5f5;
+}
+
+.ui-box {
+  @apply w-full bg-white border text-sm rounded-sm p-1 py-2;
+}
+
+.primary-button {
+  @apply px-3 py-2 text-xs rounded-sm;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+}
+
+.children {
+  @apply p-3 rounded-sm bg-white flex items-center justify-between;
+}
+
+.ui-container {
+  @apply my-2;
+}
+
+.ui-container label {
+  @apply text-sm text-gray-500;
+}
+
+.option-icon {
+  @apply sm:w-9 sm:h-9 w-10 h-10 hover:bg-yellow-200 p-1 cursor-pointer rounded-sm;
+}
